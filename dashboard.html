@@ -14,7 +14,6 @@
 <body>
     <div class="dashboard">
         <div class="sidebar">
-            <!-- Sidebar content goes here -->
             <div class="logo">
                 <img src="img/logo_kurun.svg" alt="">
             </div>
@@ -53,11 +52,38 @@
         </div>
         <div class="content">
             <header>
-                <button id="toggleSidebar">Toggle Sidebar</button>
+                <div class="flex baseline">
+                    <button id="toggleSidebar"><i class='bx bx-menu'></i></button>
+                    <div class="breadcrumb">
+                        Pages / <b>Dashboard</b>
+                    </div>
+                </div>
+                <div class="flex notifications">
+                    <div class="notif">
+                        <i class='bx bx-bell'></i>
+                    </div>
+                    <div class="notif">
+                        <i class='bx bx-message-square-dots' ></i>
+                    </div>
+                    <div class="flex profiles">
+                        <div class="namajabatan">
+                            <h2 class="namaprofile">Marisa K.</h2>
+                            <h2 class="jabatanprofile">Administrator</h2>
+                        </div>
+                        <div class="fotoprofile">
+                            <img src="img/profile.svg" alt="">
+                        </div>
+                        <div class="dropdown">
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+                </div>
+
             </header>
             <!-- Main content goes here -->
-            <h1>Welcome to the Dashboard</h1>
-            <p>This is the main content area.</p>
+            <div class="contentdash">
+                
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
