@@ -200,6 +200,23 @@ header .jabatanprofile{
     color: var(--neutral-100);
 }
 
-.cards {
+.isicontent {
     padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cards announcements"
+    "cards trending";
+}
+
+.cards {
+    grid-area: cards;
+}
+.announcement {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
