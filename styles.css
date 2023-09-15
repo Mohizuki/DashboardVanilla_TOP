@@ -19,7 +19,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -100,9 +100,7 @@ body {
 }
 
 header {
-    z-index: 2;
     width: 100%;
-    position: absolute;
     background-color: var(--neutral-10);
     padding: 1.6rem 0;
     display: flex;
@@ -117,7 +115,7 @@ header {
     border: 0.5px solid var(--neutral-50);
     padding: 10px 20px;
     cursor: pointer;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 #toggleSidebar i{
@@ -183,9 +181,25 @@ header .jabatanprofile{
 }
 
 .contentdash {
-    z-index: 1;
     background-color: var(--neutral-10);
     width: 100%;
-    height: 100%;
+    height: 40%;
     position: relative;
+}
+
+.welcometxt {
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--primary-900);
+    line-height: 75%;
+}
+.welcometxt span {
+    font-size: 1.4rem;
+    line-height: 30%;
+    color: var(--neutral-100);
+}
+
+.cards {
+    padding: 2rem;
 }
