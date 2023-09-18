@@ -284,4 +284,10 @@ header .jabatanprofile{
         "announcements"
         "trending";
     }
+    .breadcrumb {
+        color: var(--primary-900);
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+
 }
