@@ -35,10 +35,10 @@ body {
 }
 .dashboard {
     display: flex;
-    height: 100vh;
 }
 
 .sidebar {
+    z-index: 2;
     width: 250px;
     background-color: var(--primary-600);
     color: white;
@@ -100,6 +100,7 @@ body {
 }
 
 header {
+    z-index: 2;
     width: 100%;
     background-color: var(--neutral-10);
     padding: 1.6rem 0;
@@ -181,14 +182,16 @@ header .jabatanprofile{
 }
 
 .contentdash {
+    z-index: 1;
     background-color: var(--neutral-10);
     width: 100%;
-    height: 40%;
+    height: 25%;
     position: relative;
+    box-shadow: 0px 2px 5px var(--neutral-70);
 }
 
 .welcometxt {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     font-size: 3rem;
     font-weight: lighter;
     color: var(--primary-900);
@@ -201,10 +204,11 @@ header .jabatanprofile{
 }
 
 .isicontent {
-    padding: 2rem;
+    padding: 1rem 2rem;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.8fr 0.8fr;
     grid-template-areas: 
     "cards announcements"
     "cards trending";
@@ -213,10 +217,56 @@ header .jabatanprofile{
 .cards {
     grid-area: cards;
 }
-.announcement {
+.announcements {
     grid-area: announcements;
 }
 
 .trending {
     grid-area: trending;
+}
+
+.card {
+    margin: 2rem 1rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--neutral-10);
+    border-left: 10px solid var(--primary-600);
+    border-radius: 0.5rem;
+    border-collapse: separate;
+    max-width: 30rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+}
+.card span {
+    font-size: 0.8rem;
+    color: var(--neutral-70);
+}
+.news i {
+    margin: 0.8rem 0;
+    display: flex;
+    padding: 0.5rem;
+    background-color: var(--primary-600);
+    border-radius: 0.5rem;
+    color: var(--neutral-10);
+    font-size: 1.4rem;
+    height: fit-content;
+    align-items: center;
+}
+.newscapt {
+    margin: 0.8rem;
+}
+.news h2{
+    font-size: 1rem;
+    color: var(--primary-600);
+}
+.news span {
+    font-size: 0.8rem;
+    color: var(--neutral-70);
+}
+
+.topics h2{
+    font-size: 1rem;
+    color: var(--primary-600);
+    margin: 0.5rem 0;
 }
